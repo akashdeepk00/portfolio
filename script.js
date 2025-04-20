@@ -343,3 +343,17 @@ const initializeBlogPosts = () => {
 if (document.querySelector('.blog-post')) {
     initializeBlogPosts();
 }
+
+// Resume button functionality
+document.getElementById('resume-button').addEventListener('click', function(e) {
+  e.preventDefault();
+  const resumeUrl = this.getAttribute('href');
+  
+  const userChoice = confirm('Would you like to:\n\n1. Connect via email\n2. Download the resume\n\nClick OK to connect via email or Cancel to download the resume.');
+  
+  if (userChoice) {
+    window.location.href = 'mailto:akashdeep.kundu@gmail.com';
+  } else {
+    window.open(resumeUrl, '_blank');
+  }
+});
