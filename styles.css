@@ -296,7 +296,7 @@ button:focus {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 2rem 0;
 }
@@ -1184,10 +1184,12 @@ h3 {
   transition: transform 0.3s ease;
   border-radius: 50%;
   transform: scale(0.50);
+  box-shadow: none; /* Remove shadow */
 }
 
 .profile-badge:hover {
   transform: scale(.65);
+  box-shadow: none; /* Remove shadow on hover */
 }
 
 /* Responsive adjustments */
@@ -1328,7 +1330,8 @@ h3 {
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .profile-button {
@@ -1343,6 +1346,7 @@ h3 {
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
+  margin-left: 0;
 }
 
 .profile-button:hover {
@@ -1371,10 +1375,73 @@ h3 {
   .profile-buttons {
     flex-direction: column;
     gap: 0.75rem;
+    align-items: flex-start;
   }
   
   .profile-button {
-    width: 100%;
-    justify-content: center;
+    width: auto;
+    justify-content: flex-start;
+  }
+}
+
+.resume-download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 2.5rem;
+  background-color: var(--primary-color, #0984e3);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  margin: 2rem 0;
+  box-shadow: 0 4px 15px rgba(9, 132, 227, 0.3);
+  border: 2px solid transparent;
+}
+
+.resume-download-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(9, 132, 227, 0.4);
+  background-color: var(--secondary-color, #00b894);
+  border-color: white;
+}
+
+.resume-download-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(9, 132, 227, 0.3);
+}
+
+.resume-download-button svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+}
+
+@keyframes subtlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.resume-download-button {
+  animation: subtlePulse 2s infinite ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resume-download-button {
+    animation: none;
+  }
+  
+  .resume-download-button:hover {
+    transform: none;
   }
 }
