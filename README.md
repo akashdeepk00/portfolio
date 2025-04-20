@@ -6,10 +6,12 @@ A professional portfolio website showcasing the work and experience of Akashdeep
 
 - **Responsive Design**: Fully responsive layout that works across all devices
 - **Dark/Light Mode**: Toggle between light and dark themes
-- **Accessibility**: Built with accessibility in mind, including skip links and ARIA labels
+- **Accessibility**: Built with accessibility in mind, including ARIA labels
 - **Performance Optimized**: Optimized images and lazy loading for better performance
 - **Modern UI**: Clean and professional design with smooth animations
 - **Interactive Elements**: Interactive sections for experience, skills, and certifications
+- **Contact Integration**: Easy access to email, LinkedIn, and blog through contact cards
+- **Resume Download**: Prominent resume download button with email connect option
 
 ## Tech Stack
 
@@ -45,11 +47,26 @@ portfolio-website/
 ## Sections
 
 1. **About Me**: Professional introduction and specialties
+   - Prominent resume download button
+   - Professional headshot with Top Fellow badge
 2. **Experience**: Detailed work history with visual showcases
 3. **Education**: Academic background
 4. **Skills**: Categorized technical and soft skills
 5. **Certifications**: Professional certifications and ongoing learning
 6. **Contact**: Contact information and social links
+   - Email contact card
+   - Blog link
+   - LinkedIn profile
+
+## Interactive Features
+
+- **Resume Download**: Prominent button with email connect option
+- **Theme Toggle**: Switch between light and dark modes
+- **Image Gallery**: Interactive lightbox for project images
+- **Book List**: Expandable list of published works
+- **Contact Cards**: Interactive cards for different contact methods
+- **Smooth Scrolling**: Navigation between sections
+- **Animations**: Subtle animations for better user experience
 
 ## Setup Instructions
 
